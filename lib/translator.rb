@@ -19,7 +19,7 @@ def get_japanese_emoticon(emoticons_file, emot)
     if meaning[emotion][:english] == emot
       return meaning[emotion][:japanese]
     else
-      retur
+      return apology
     end
   end
 end
