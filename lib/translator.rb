@@ -15,7 +15,9 @@ end
 #binding.pry
 def get_japanese_emoticon(emoticons_file, emot)
   meaning = load_library(emoticons_file)
-  meaning.each do |language, emoticon|
+  meaning.each do |emotion, language|
+    if meaning[emotion][:english] == emot
+      return meaning[emotion][:japanese]
 end
 
 def get_english_meaning
