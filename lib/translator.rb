@@ -20,7 +20,7 @@ def get_japanese_emoticon(emoticons_file, emot)
       return meaning[emotion][:japanese]
     end
   end
-  return "apology"
+  return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning
