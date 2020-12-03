@@ -22,7 +22,7 @@ def get_japanese_emoticon(emoticons_file, emot)
   end
   return "Sorry, that emoticon was not found"
 end
-
+puts get_japanese_emoticon("./lib/emoticons.yml", )
 def get_english_meaning(emoticons_file, emot)
   meaning = load_library(emoticons_file)
   meaning.each do |emotion, language|
