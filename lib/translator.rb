@@ -17,8 +17,9 @@ def get_japanese_emoticon(emoticons_file, emot)
   meaning = load_library(emoticons_file)
   meaning.each do |emotion, language|
     if meaning[emotion][:english] == emot
-      return meaning[emotion][:japanese]
-    
+       meaning[emotion][:japanese]
+    else
+      "apology"
     end
   end
 end
