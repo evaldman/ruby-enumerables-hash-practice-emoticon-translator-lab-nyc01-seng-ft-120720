@@ -34,3 +34,4 @@ def get_english_meaning(emoticons_file, emot)
   end
   return "Sorry, that emoticon was not found"
 end
+("./lib/emoticons.yml", ":$")
