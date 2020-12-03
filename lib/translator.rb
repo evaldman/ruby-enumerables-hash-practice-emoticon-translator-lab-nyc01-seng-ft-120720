@@ -18,9 +18,11 @@ def get_japanese_emoticon(emoticons_file, emot)
   meaning.each do |emotion, language|
     if meaning[emotion][:english] == emot
       return meaning[emotion][:japanese]
+    else
+      return "Sorry, that emoticon was not found"
     end
   end
-  return "Sorry, that emoticon was not found"
+  
 end
 
 def get_english_meaning
