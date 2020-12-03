@@ -1,4 +1,4 @@
-# require modules here
+rewuire "pry" 
 require "yaml"
 
 def load_library(emoticons_file)
@@ -12,6 +12,7 @@ def load_library(emoticons_file)
  new_hash
 end
 
+binding.pry
 def get_japanese_emoticon
   
 end
