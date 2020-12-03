@@ -9,7 +9,7 @@ def load_library(emoticons_file)
    new_hash[meaning][:english] = emot[0]
    new_hash[meaning][:japanese] = emot[1]
  end
- new_hash
+ return new_hash
 end
 #puts load_library("./lib/emoticons.yml")
 #binding.pry
