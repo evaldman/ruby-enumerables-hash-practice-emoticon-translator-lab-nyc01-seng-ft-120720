@@ -13,7 +13,7 @@ def load_library(emoticons_file)
 end
 #puts load_library("./lib/emoticons.yml")
 #binding.pry
-def get_japanese_emoticon
+def get_japanese_emoticon(emoticon_file )
   
 end
 
