@@ -28,4 +28,6 @@ def get_english_meaning(emoticons_file, emot)
   meaning.each do |emotion, language|
     if meaning[emotion][:japanese] == emot
       return emotion
+    end
+  end
 end
